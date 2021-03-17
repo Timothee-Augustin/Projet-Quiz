@@ -1,3 +1,21 @@
 html {
  color : red;
 }
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+
+@media screen and (max-width: 525px){
+    ul{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+
+
+li {
+    list-style: none;
+}
