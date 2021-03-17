@@ -24,4 +24,17 @@ h1 {
     #rules {
         font-size : 30px;
     }
+    ul{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    }
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+
+li {
+    list-style: none;
 }
