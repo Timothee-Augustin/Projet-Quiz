@@ -7,6 +7,7 @@ body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        justify-content: space-around;
 }
 
 .divPourCss {
@@ -32,17 +33,35 @@ h1 {
     font-size : 80px;
     margin: 0;
     color :blue;
-    padding-bottom: 70px;
+    
 
 }
 
+.rules {
+    text-align: center;
+    margin-right: 22px;
+}
 #rules {
-    font-size : 45px;
-    margin: 10px;
+    font-size: 40px;
+}
+.valeur {
+    text-align: center;
 }
 .question {
     text-align : center;
     border : 2px solid black;
+}
+
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap : 8px;
+    }
+
+li {
+    list-style: none;
 }
 @media screen and (max-width:525px){
     h1 {
@@ -58,13 +77,3 @@ h1 {
         font-size : 2rem;
     }
     }
-
-ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    }
-
-li {
-    list-style: none;
-}
