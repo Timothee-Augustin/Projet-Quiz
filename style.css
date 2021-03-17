@@ -33,7 +33,7 @@ h1 {
     text-align: center;
     font-size : 80px;
     margin: 0;
-    color :blue;
+    color :goldenrod;
     border: 3px outset black;
     
 
@@ -78,6 +78,11 @@ li {
 .question p {
     font-size: 1.4rem;
 }
+
+.title {
+    background-color: rgb(15, 15, 114);
+}
+
 @media screen and (max-width:769px){
     h1 {
         font-size : 50px;
