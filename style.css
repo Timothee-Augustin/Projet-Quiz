@@ -1,13 +1,14 @@
 * {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        justify-content: space-around;
+        justify-content: space-evenly;
 }
 
 .divPourCss {
@@ -33,6 +34,7 @@ h1 {
     font-size : 80px;
     margin: 0;
     color :blue;
+    border: 3px outset black;
     
 
 }
@@ -50,6 +52,7 @@ h1 {
 .question {
     text-align : center;
     border : 2px solid black;
+    padding: 1rem ;
 }
 
 
@@ -58,12 +61,24 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap : 8px;
+    
     }
 
 li {
     list-style: none;
+    
 }
-@media screen and (max-width:525px){
+#A , #B , #C , #D{
+    font-size : 30px;
+    width : 100%;
+}
+#validation {
+    font-size: 40px;
+}
+.question p {
+    font-size: 1.4rem;
+}
+@media screen and (max-width:769px){
     h1 {
         font-size : 50px;
     }
@@ -76,4 +91,11 @@ li {
     #cagnotte {
         font-size : 2rem;
     }
+    #A , #B , #C , #D{
+        font-size : 25px;
+
     }
+    #validation {
+        font-size: 30px;
+    }
+}
