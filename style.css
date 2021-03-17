@@ -1,6 +1,6 @@
 * {
     list-style: none;
-    margin: 0;
+    margin: 1px;
     padding: 0;
 }
 
@@ -19,7 +19,7 @@ body {
 
 #cagnotte {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 4rem;
+        font-size: 3rem;
         display: inline;
         align-items: center;
 }
@@ -28,8 +28,23 @@ h1 {
     text-align: center;
     font-size : 80px;
     margin: 0;
+<<<<<<< HEAD
     color :blue;
     border: 3px outset black;
+=======
+    color: white;  
+    border: 5px solid;
+    border-image-source: linear-gradient(45deg, rgb(254, 254, 255),goldenrod);
+    border-image-slice: 1;
+    
+}
+strong {
+    color: rgb(206, 167, 69);
+}
+
+.title {
+    background : linear-gradient(to left,white,goldenrod);
+>>>>>>> 4e0f2151938b092c3d2b9d557f3beba00de0ea6f
 }
 
 .rules {
@@ -105,5 +120,9 @@ li {
     }
     #validation {
         font-size: 30px;
+    }
+    #cagnotte {
+        font-size: 1.5rem;
+        
     }
 }
