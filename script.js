@@ -33,3 +33,20 @@ for (let i = 0; i < answerButton.length; i++){
     }
 })
 */
+    
+
+/** const validButton = document.getElementById("validation");
+
+validButton.addEventListener('mouseover', function(){
+    validButton.innerHTML = "C'est votre ultime bafouille ?";
+    validButton.style.backgroundColor = "orange";
+    validButton.style.color = "black"
+    validButton.addEventListener('mouseleave', function() {
+        validButton.innerHTML = "Valider";
+        validButton.style.backgroundColor = "";
+        validButton.style.color = ""
+});
+});
+*/
+
+
