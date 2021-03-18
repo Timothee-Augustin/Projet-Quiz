@@ -70,10 +70,6 @@ strong {
     border : 2px solid black; 
 }
 
-
-
-
-
 ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,10 +82,12 @@ li {
     list-style: none;
     
 }
-#A , #B , #C , #D{
+.answer{
+    background-color: white;
     font-size : 30px;
     width : 100%;
 }
+
 #validation {
     font-size: 40px;
 }
@@ -107,7 +105,8 @@ li {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
     
-    #A , #B , #C , #D{
+    .answer{
+        background-color: white;
         font-size : 25px;
 
     }
