@@ -33,6 +33,39 @@
     <p id="cagnotte">cagnotte : ... 𝟉</p>
     <button id="validation">Valider</button>
     </div>
-    <script src="script.js"></script>
+    
+<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+  <script src="script.js"></script> 
+  <!-- <script  type = "text/babel">
+    
+    'use strict';
+
+const e = React.createElement;
+
+class AnswerButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+    if (this.state.liked) {
+      return 'You liked this.';
+    }
+
+    return (
+      <button onClick={ function() {  this.setState({ liked: true });}}>
+        Like  
+      </button>
+      
+    );
+  }
+}
+
+const domContainer = document.querySelector('#answBut');
+ReactDOM.render(e(AnswerButton), domContainer);
+    </script> -->
 </body>
 </html>
