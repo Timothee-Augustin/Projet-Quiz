@@ -8,14 +8,14 @@ let playerGain = 0;
 let questionValue = 100;
 
 rulesButton.addEventListener("click", function(){
-    alert("- Vous commencez avec une cagnotte à 0 \n- En cas de bonne réponse vous gagner des wildCoins \n- Mais en cas de mauvais réponse vous perdez des wildCoins");
+    alert("- Vous commencez avec une cagnotte à 0 \n- En cas de bonne réponse, vous gagnez des wildCoins \n- Mais en cas de mauvaise réponse, vous perdez des wildCoins");
 });
 
 
 for (let i = 0; i < answerButton.length; i++){
    
     answerButton[i].addEventListener("click", function(){
-        answerButton[i].style.background = "yellow";
+        answerButton[i].style.background = "lightblue";
         answerChoice = i;
         for (let j = 0; j < i; j++){
             answerButton[j].style.background = "white";
@@ -29,13 +29,13 @@ for (let i = 0; i < answerButton.length; i++){
     
 validButton.addEventListener("click", function(){
     if (answerChoice === correctAnswer) {
-        answerButton[answerChoice].style.background = "green";
+        answerButton[answerChoice].style.background = "lightgreen";
         playerGain = playerGain + questionValue
         gain.innerHTML = `cagnotte : ${playerGain} 𝟉`
     } 
     else {
-        answerButton[answerChoice].style.background = "red";
-        answerButton[correctAnswer].style.background = "blue";
+        answerButton[answerChoice].style.background = "lightcoral";
+        answerButton[correctAnswer].style.background = "lightgreen";
         playerGain = playerGain - questionValue
         gain.innerHTML = `cagnotte : ${playerGain} 𝟉`
     }

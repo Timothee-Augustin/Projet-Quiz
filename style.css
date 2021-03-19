@@ -10,7 +10,7 @@ body {
         flex-direction: column;
         min-height: 100vh;
         justify-content: space-evenly;
-        background-color: rgb(228, 220, 194);
+        background: linear-gradient(270deg, lightgoldenrodyellow, whitesmoke);
 }
 
 .footer {
@@ -93,8 +93,7 @@ li {
     list-style: none;
     
 }
-.answer{
-    background-color: white;
+.answer {
     font-size : 30px;
     width : 100%;
 }
@@ -186,6 +185,14 @@ li {
     background-color: rgb(15, 15, 114);
 }
 
+.answer {
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid goldenrod;
+    background-color:white;
+    font-size: 1.5em;
+}
+
 
 @media screen and (max-width:769px){
     h1 {
@@ -201,16 +208,30 @@ li {
     .answer{
         background-color: white;
         font-size : 25px;
-
+        height: 50px;
     }
+    
     #validation {
         font-size: 30px;
+        height: 40px;
+        width: 150px;
     }
     #cagnotte {
         font-size: 1.5rem;
         
     }
-        
+    .content p {
+        font-size: 20px;
+    }
+
+    .content h2 {
+        font-size: 22px;
+        margin-top: 4px;
+    }
+
+    .question p {
+        font-size: 21px;
+    }     
 }
     h1 {
     animation-name: slideIn;
@@ -236,4 +257,21 @@ li {
     }
   }
   
+  #cagnotte {
+      animation-name: pulse;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+  }
+@keyframes pulse {
+    0% {
+        transform: scale(0.90)
+      }
 
+      50% {
+          transform: scale(1);
+      }
+
+      100% {
+          transform: scale(0.90);
+      }
+    }
