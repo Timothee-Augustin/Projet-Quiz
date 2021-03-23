@@ -18,28 +18,99 @@
     </div>
     <div class="question">
         <div class = "content">
-        <p>Question n°1 :</p>
-        <h2>Quel autre nom est donné à la ville de Reims ?</h2>
+        <p id="question-number">Question n°1 :</p>
+        <h2 id="question-title">Quel autre nom est donné à la ville de Reims ?</h2>
         </div>
         <p class="valeur">valeur : 100 𝟉</p>
     </div>
    
    
     <ul>
-        <li><button class = answer>⚜️ La cité des sacres ⚜️</button></li>
-        <li><button class = answer>⚜️ La cité d'or ⚜️</button></li>
-        <li><button class = answer>⚜️ La cité de la peur ⚜️</button></li>
-        <li><button class = answer>⚜️ La cité du champagne ⚜️</button></li>
+        <li><button class = "answer" id="a">⚜️ La cité des sacres ⚜️</button></li>
+        <li><button class = "answer" id="b">⚜️ La cité d'or ⚜️</button></li>
+        <li><button class = "answer" id="c">⚜️ La cité de la peur ⚜️</button></li>
+        <li><button class = "answer" id="d">⚜️ La cité du champagne ⚜️</button></li>
     </ul>
     
+    <div id="quiz"></div>
     <div class="footer">
     <p id="cagnotte">cagnotte :  Ø 𝟉</p>
     <button id="validation">Valider</button>
     </div>
     
-<!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      class Quiz extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                step: 0,
+                score: 0,
+                multiplicator: 1,
+            };
+        }
+    
+        render() {
+            if (this.state.step === 0) {
+                return (
+                    <React.Fragment>
+                        <p>question 1</p>
+                        <button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button>
+                        <button onClick={ () => this.setState({ step: 1, score: this.state.score + this.state.multiplicator }) }>
+                            good answer
+                        </button>
+                        <p>{ this.state.score }</p>
+                    </React.Fragment>
+                );
+            }
+            if (this.state.step === 1) {
+                return (
+                    <React.Fragment>
+                        <p>question 2</p>
+                        <button onClick={ () => {
+                            this.setState({ step: 2, score: this.state.score - this.state.multiplicator });
+                            setTimeout(() => this.setState({step: 3}), 3000);
+                         } }>
+                            bad answer
+                        </button>
+                        <button onClick={ () => {
+                            this.setState({ step: 2, score: this.state.score + this.state.multiplicator });
+                            setTimeout(() => this.setState({step: 3}), 3000);
+                        } }>
+                          good answer
+                        </button>
+                        <p>{ this.state.score }</p>
+                    </React.Fragment>
+                );
+            }
+            if (this.state.step === 2) {
+                return (
+                    <React.Fragment>
+                        <p>wait for it</p>
+                    </React.Fragment>
+                );
+            }
+            if (this.state.step === 3) {
+                  return (
+                      <React.Fragment>
+                          <p>your score is { this.state.score }</p>
+                          <button onClick={ () => this.setState({ step: 0, score: 0 }) }>
+                              rejouer
+                          </button>
+                      </React.Fragment>
+                  );
+            }
+        }
+    }
+    
+    const quizContainer = document.querySelector("#quiz");
+    ReactDOM.render(<Quiz />, quizContainer);
+    
+    </script>
   <script src="script.js"></script> 
   <!-- <script  type = "text/babel">
     

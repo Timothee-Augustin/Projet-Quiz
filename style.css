@@ -141,6 +141,14 @@ li {
     color: white;
 }
 
+.clicked {
+    background : lightblue;
+}
+
+.unclicked {
+    background: white;
+}
+
 /* FIN BUTTON REGLES ET DEBUT BUTTON VALIDER */
 #validation {
     position: relative;
@@ -268,6 +276,7 @@ li {
       opacity: 1;
     }
   }
+
   
 
 /* MEDIA QUERIES*/
