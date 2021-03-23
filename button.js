@@ -102,3 +102,23 @@ class LikeButton extends React.Component {
 //     );
 // }
         
+if (this.state.step === 1) {
+    return (
+        <React.Fragment>
+            <p>question 2</p>
+            <button onClick={ () => {
+                this.setState({ step: 2, score: this.state.score - this.state.multiplicator });
+                setTimeout(() => this.setState({step: 3}), 3000);
+             } }>
+                bad answer
+            </button>
+            <button onClick={ () => {
+                this.setState({ step: 2, score: this.state.score + this.state.multiplicator });
+                setTimeout(() => this.setState({step: 3}), 3000);
+            } }>
+              good answer
+            </button>
+            <p>{ this.state.score }</p>
+        </React.Fragment>
+    );
+}

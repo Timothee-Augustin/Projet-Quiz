@@ -16,7 +16,7 @@
     <div class="rules">
         <button id="rules">Règles </button>
     </div>
-    <div class="question">
+<!--  <div class="question">
         <div class = "content">
         <p id="question-number">Question n°1 :</p>
         <h2 id="question-title">Quel autre nom est donné à la ville de Reims ?</h2>
@@ -30,13 +30,13 @@
         <li><button class = "answer" id="b">⚜️ La cité d'or ⚜️</button></li>
         <li><button class = "answer" id="c">⚜️ La cité de la peur ⚜️</button></li>
         <li><button class = "answer" id="d">⚜️ La cité du champagne ⚜️</button></li>
-    </ul>
+    </ul> -->
     
     <div id="quiz"></div>
-    <div class="footer">
+<!--    <div class="footer">
     <p id="cagnotte">cagnotte :  Ø 𝟉</p>
     <button id="validation">Valider</button>
-    </div>
+    </div> -->
     
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
@@ -56,45 +56,139 @@
             if (this.state.step === 0) {
                 return (
                     <React.Fragment>
-                        <p>question 1</p>
-                        <button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                      <div class = "question">
+                        <div class = "content">
+                          <p>question 1</p>
+                          <h2>Ceci est la premiere question</h2>                        
+                        </div>
+                        <p class= "valeur">valeur : 100 𝟉</p>
+                      </div> 
+                      <ul> 
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
                             bad answer
-                        </button>
-                        <button onClick={ () => this.setState({ step: 1, score: this.state.score + this.state.multiplicator }) }>
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score + this.state.multiplicator }) }>
                             good answer
-                        </button>
-                        <p>{ this.state.score }</p>
+                        </button></li>
+                      </ul>  
+                      <div class = "footer">
+                        <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
+                        <button id="validation" onClick={ () => this.setState({ step : 1}) }>Valider</button>  
+                      </div>
                     </React.Fragment>
                 );
             }
             if (this.state.step === 1) {
-                return (
+              return (
                     <React.Fragment>
-                        <p>question 2</p>
-                        <button onClick={ () => {
-                            this.setState({ step: 2, score: this.state.score - this.state.multiplicator });
-                            setTimeout(() => this.setState({step: 3}), 3000);
-                         } }>
+                      <div class = "question">
+                        <div class = "content">
+                          <p>question 1</p>
+                          <h2>Ceci est la premiere question</h2>                        
+                        </div>
+                        <p class= "valeur">valeur : 100 𝟉</p>
+                      </div> 
+                      <ul> 
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
                             bad answer
-                        </button>
-                        <button onClick={ () => {
-                            this.setState({ step: 2, score: this.state.score + this.state.multiplicator });
-                            setTimeout(() => this.setState({step: 3}), 3000);
-                        } }>
-                          good answer
-                        </button>
-                        <p>{ this.state.score }</p>
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score + this.state.multiplicator }) }>
+                            good answer
+                        </button></li>
+                      </ul>  
+                      <div class = "footer">
+                        <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
+                        <button id="validation" onClick={ () => this.setState({ step : 2}) }>Next</button>  
+                      </div>
                     </React.Fragment>
                 );
             }
             if (this.state.step === 2) {
-                return (
+              return (
                     <React.Fragment>
-                        <p>wait for it</p>
+                      <div class = "question">
+                        <div class = "content">
+                          <p>question 2</p>
+                          <h2>Ceci est la 2e question</h2>                        
+                        </div>
+                        <p class= "valeur">valeur : 100 𝟉</p>
+                      </div> 
+                      <ul> 
+                        <li><button class="answer" onClick={ () => this.setState({ step: 3, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 3, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 3, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 3, score: this.state.score + this.state.multiplicator }) }>
+                            good answer
+                        </button></li>
+                      </ul>  
+                      <div class = "footer">
+                        <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
+                        <button id="validation" onClick={ () => this.setState({ step : 3}) }>Valider</button>  
+                      </div>
                     </React.Fragment>
                 );
             }
             if (this.state.step === 3) {
+              return (
+                    <React.Fragment>
+                      <div class = "question">
+                        <div class = "content">
+                          <p>question 2</p>
+                          <h2>Ceci est la 2e question</h2>                        
+                        </div>
+                        <p class= "valeur">valeur : 100 𝟉</p>
+                      </div> 
+                      <ul> 
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score - this.state.multiplicator }) }>
+                            bad answer
+                        </button></li>
+                        <li><button class="answer" onClick={ () => this.setState({ step: 1, score: this.state.score + this.state.multiplicator }) }>
+                            good answer
+                        </button></li>
+                      </ul>  
+                      <div class = "footer">
+                        <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
+                        <button id="validation" onClick={ () => this.setState({ step : 4}) }>Next</button>  
+                      </div>
+                    </React.Fragment>
+                );
+            }
+
+
+
+              
+
+
+
+            if (this.state.step === 4) {
+
+
+
+              
                   return (
                       <React.Fragment>
                           <p>your score is { this.state.score }</p>
