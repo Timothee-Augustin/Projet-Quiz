@@ -278,8 +278,8 @@
               
                   return (
                       <React.Fragment>
-                          <p>your score is { this.state.score }</p>
-                          <button class = "answer" onClick={ () => this.setState({ step: 0, score: 0 }) }>
+                        <p class = "scoreEnd" >you earned { this.state.score } 𝟉<br />Hope you enjoyed !</p>
+                          <button id = "rejouer" onClick={ () => this.setState({ step: 0, score: 0 }) }>
                               rejouer
                           </button>
                       </React.Fragment>
