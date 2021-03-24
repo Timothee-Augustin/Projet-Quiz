@@ -65,15 +65,17 @@
                         </div>
                         <p class= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div> 
-                      <button class={this.state.currentMultiplier === 2 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentMultiplier: 2})}>
+                      <div class="bonus">
+                      <button class={this.state.currentMultiplier === 2 ? "multiplier clicked" : "multiplier"} onClick={ () => this.setState({ currentMultiplier: 2})}>
                         x 2
                       </button>
-                      <button class={this.state.currentMultiplier === 3 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentMultiplier: 3})}>
+                      <button class={this.state.currentMultiplier === 3 ? "multiplier clicked" : "multiplier"} onClick={ () => this.setState({ currentMultiplier: 3})}>
                         x 3
                       </button>
-                      <button class={this.state.currentMultiplier === 4 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentMultiplier: 4})}>
+                      <button class={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} onClick={ () => this.setState({ currentMultiplier: 4})}>
                         x 4
                       </button>  
+                      </div>
                       <ul> 
                         <li><button class={this.state.currentAnswer === 1 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentAnswer: 1 }) }>
                           ⚜️ La cité d'or ⚜️
@@ -118,15 +120,17 @@
                         </div>
                         <p class= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div> 
-                      <button class={this.state.currentMultiplier === 2 ? "answer clicked" : "answer"} >
+                      <div class="bonus">
+                      <button class={this.state.currentMultiplier === 2 ? "multiplier clicked" : "multiplier"} >
                         x 2
                       </button>
-                      <button class={this.state.currentMultiplier === 3 ? "answer clicked" : "answer"} >
+                      <button class={this.state.currentMultiplier === 3 ? "multiplier clicked" : "multiplier"} >
                         x 3
                       </button>
-                      <button class={this.state.currentMultiplier === 4 ? "answer clicked" : "answer"} >
+                      <button class={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} >
                         x 4
                       </button> 
+                      </div>
                       <ul> 
                         <li><button class={this.state.currentAnswer === 1 ? "answer badAnswer" : "answer"} >
                           ⚜️ La cité d'or ⚜️
