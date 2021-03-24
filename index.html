@@ -48,7 +48,7 @@
             this.state = {
                 step: 0,
                 score: 0,
-                gain: 100,
+                gain: 100,                
             };
         }
 
@@ -65,6 +65,15 @@
                         </div>
                         <p class= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div> 
+                      <button class={this.state.currentMultiplier === 2 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentMultiplier: 2})}>
+                        x 2
+                      </button>
+                      <button class={this.state.currentMultiplier === 3 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentMultiplier: 3})}>
+                        x 3
+                      </button>
+                      <button class={this.state.currentMultiplier === 4 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentMultiplier: 4})}>
+                        x 4
+                      </button>  
                       <ul> 
                         <li><button class={this.state.currentAnswer === 1 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentAnswer: 1 }) }>
                           ⚜️ La cité d'or ⚜️
@@ -83,6 +92,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
+                             for (let i = 0; i < 5; i++) {
+                               if(this.state.currentMultiplier === i){
+                                 this.state.gain = this.state.gain * this.state.currentMultiplier
+                               }
+                             }
                              if(this.state.currentAnswer === 4) {
                                score = this.state.score + this.state.gain
                              } else {
@@ -104,6 +118,15 @@
                         </div>
                         <p class= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div> 
+                      <button class={this.state.currentMultiplier === 2 ? "answer clicked" : "answer"} >
+                        x 2
+                      </button>
+                      <button class={this.state.currentMultiplier === 3 ? "answer clicked" : "answer"} >
+                        x 3
+                      </button>
+                      <button class={this.state.currentMultiplier === 4 ? "answer clicked" : "answer"} >
+                        x 4
+                      </button> 
                       <ul> 
                         <li><button class={this.state.currentAnswer === 1 ? "answer badAnswer" : "answer"} >
                           ⚜️ La cité d'or ⚜️
