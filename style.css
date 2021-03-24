@@ -74,6 +74,7 @@ strong {
     column-gap: 1rem;
     background : linear-gradient(to left,white,goldenrod);
     font-size : 20px;
+    margin-bottom: 100px;
     
 }
 .content {
@@ -93,6 +94,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap : 8px;
+    margin-bottom: 60px;
     
     }
 
