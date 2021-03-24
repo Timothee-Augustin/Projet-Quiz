@@ -98,6 +98,22 @@ ul {
     
     }
 
+.multiplier {
+    border: 2px solid goldenrod;
+    width : 100px;
+    height: 40px;
+    color: lightcoral;
+    
+    
+}
+.bonus {
+    display: flex;
+    justify-content: flex-end;   
+    
+}
+
+
+
 /* BUTTON REGLES */
 #rules {
     position: relative;
