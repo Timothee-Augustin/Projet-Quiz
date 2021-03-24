@@ -120,7 +120,7 @@
                       </ul>  
                       <div class = "footer">
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
-                        <button id="validation" onClick={ () => this.setState({ step : 2}) }>Next</button>  
+                        <button id="validation" onClick={ () => this.setState({ step : 2, currentAnswer : 0 }) }>Next</button>  
                       </div>
                     </React.Fragment>
                 );
@@ -175,16 +175,16 @@
                         <p class= "valeur">valeur : 100 𝟉</p>
                       </div> 
                       <ul> 
-                        <li><button class={this.state.currentAnswer === 1 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentAnswer: 1 }) }>
+                        <li><button class={this.state.currentAnswer === 1 ? "answer badAnswer" : "answer"} onClick={ () => this.setState({ currentAnswer: 1 }) }>
                             bad answer
                         </button></li>
-                        <li><button class={this.state.currentAnswer === 2 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentAnswer: 2 }) }>
+                        <li><button class={this.state.currentAnswer === 2 ? "answer badAnswer" : "answer"} onClick={ () => this.setState({ currentAnswer: 2 }) }>
                             bad answer
                         </button></li>
-                        <li><button class={this.state.currentAnswer === 3 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentAnswer: 3 }) }>
+                        <li><button class={this.state.currentAnswer === 3 ? "answer badAnswer" : "answer"} onClick={ () => this.setState({ currentAnswer: 3 }) }>
                             bad answer
                         </button></li>
-                        <li><button class={this.state.currentAnswer === 4 ? "answer clicked" : "answer"} onClick={ () => this.setState({ currentAnswer: 4 }) }>
+                        <li><button class="goodAnswer">
                             good answer
                         </button></li>
                       </ul>  
