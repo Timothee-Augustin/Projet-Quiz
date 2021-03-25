@@ -102,10 +102,13 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
                                this.state.gain = this.state.score 
                                this.state.isUsed[6] = true
-                             }
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
+                               this.state.isUsed[6] = true
+                              }
                              for (let i = 0; i < 5; i++) {
                                if(this.state.currentMultiplier === i){
                                  this.state.gain = this.state.gain * this.state.currentMultiplier
@@ -147,7 +150,7 @@
                         x 4
                       </button>
                       <button className={this.state.multiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>  
                       </div>
                       <ul> 
@@ -217,8 +220,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -262,7 +268,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -332,8 +338,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -377,7 +386,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -447,8 +456,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -492,7 +504,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -562,8 +574,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -607,7 +622,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -677,8 +692,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -722,7 +740,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -792,8 +810,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -837,7 +858,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -907,8 +928,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -952,7 +976,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -1022,8 +1046,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -1067,7 +1094,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -1098,7 +1125,7 @@
                       <div className = "question">
                         <div className = "content">
                           <p>question 10</p>
-                          <h2>Combien de langues (notions et maîtrisés) Clément compte t'il dans son répertoire ?</h2>                        
+                          <h2>Combien de langues (notions et maîtrisées) Clément compte-t-il dans son répertoire ?</h2>                        
                         </div>
                         <p className= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div>
@@ -1137,8 +1164,11 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.currentMultiplier === 6) {
-                               this.state.gain = this.state.score
+                             if (this.state.currentMultiplier === 6 && this.state.score >= 0) {
+                               this.state.gain = this.state.score 
+                               this.state.isUsed[6] = true
+                             } else if (this.state.currentMultiplier === 6 && this.state.score < 0){
+                               this.state.gain = -this.state.score 
                                this.state.isUsed[6] = true
                              }
                              for (let i = 0; i < 5; i++) {
@@ -1164,7 +1194,7 @@
                       <div className = "question">
                         <div className = "content">
                           <p>question 10</p>
-                          <h2>Combien de langues (notions et maîtrisés) Clément compte t'il dans son répertoire ?</h2>                        
+                          <h2>Combien de langues (notions et maîtrisées) Clément compte-t-il dans son répertoire ?</h2>                        
                         </div>
                         <p className= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div> 
@@ -1182,7 +1212,7 @@
                         x 4
                       </button>
                       <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
-                        All in
+                        All In
                       </button>
                       </div>  
                       <ul> 
@@ -1219,9 +1249,9 @@
               //<p className = "scoreEnd"> {this.state.score > 0 ? (<>You earned {this.state.score}<br />Hope you enjoyed the game !</>) : (<>You owe us {this.state.score}<br />See you soon ... !</>)}</p>
                   return (
                       <React.Fragment>
-                        <div className = "scoreEnd"> {this.state.score >= 0 ? (<p>You earned {this.state.score} 𝟉<br />Hope you enjoyed the game !</p>) : (<p>You owe us {this.state.score} 𝟉<br />See you soon ... !</p>) }</div>
-                        <div className="imgEnd"> {this.state.score >= 0 ? <img src="https://s-i.huffpost.com/gen/5668976/images/n-MONEY-HAPPINESS-628x314.jpg" alt="meme"/> : <img src="https://collectifcinephile.files.wordpress.com/2018/01/flouz.jpg" alt="meme"/> }</div>
-                        <button id = "rejouer" onClick={ () => this.setState({ step: 0, score: 0 }) }>
+                        <div className = "scoreEnd"> {this.state.score > 0 ? (<p>You earned {this.state.score} 𝟉<br />Hope you enjoyed the game !</p>) : (<p>You owe us {this.state.score} 𝟉<br />See you soon ... !</p>) }</div>
+                        <div className="imgEnd"> {this.state.score > 0 ? <img src="https://s-i.huffpost.com/gen/5668976/images/n-MONEY-HAPPINESS-628x314.jpg" alt="meme"/> : <img src="https://collectifcinephile.files.wordpress.com/2018/01/flouz.jpg" alt="meme"/> }</div>
+                        <button id = "rejouer" onClick={ () => this.setState({ step: 0, score: 0, gain: 100, isUsed: [] }) }>
                               rejouer
                           </button>
                       </React.Fragment>

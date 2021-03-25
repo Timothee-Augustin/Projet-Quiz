@@ -74,7 +74,7 @@ strong {
     column-gap: 1rem;
     background : linear-gradient(to left,white,goldenrod);
     font-size : 20px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     
 }
 .content {
@@ -94,8 +94,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap : 8px;
-    margin-bottom: 60px;
-    
+    margin-bottom: 40px;    
     }
 
 .multiplier {
@@ -109,10 +108,10 @@ ul {
 }
 .bonus {
     display: flex;
-    justify-content: center; 
-    margin-bottom: 50px;
-    
-    
+    justify-content: space-around; 
+    margin-bottom: 25px;
+    padding-left: 400px;    
+    padding-right: 400px;
 }
 
 
