@@ -79,7 +79,7 @@
                       <button className={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} onClick={ () => this.setState({ currentMultiplier: 4})}>
                         x 4
                       </button>
-                      <button className={this.state.allIn === 1 ? "multiplier clicked" : "multiplier"} onClick={ () => this.setState({ allIn: 1})}>
+                      <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} onClick={ () => this.setState({ currentMultiplier: 6})}>
                         All In
                       </button>  
                       </div>
@@ -101,7 +101,7 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.allIn === 1) {
+                             if (this.state.currentMultiplier === 6) {
                                this.state.gain = this.state.score
                                this.state.isUsed[6] = true
                              }
@@ -145,7 +145,7 @@
                       <button className={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[4]}>
                         x 4
                       </button>
-                      <button className={this.state.allIn === 1 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
+                      <button className={this.state.multiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
                         All in
                       </button>  
                       </div>
@@ -165,7 +165,7 @@
                       </ul>  
                       <div className = "footer">
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
-                        <button id="validation" onClick={ () => this.setState({ step : 2, currentAnswer : 0, gain : 200, currentMultiplier : "", allIn : "" }) }>Next</button>  
+                        <button id="validation" onClick={ () => this.setState({ step : 2, currentAnswer : 0, gain : 200, currentMultiplier : ""}) }>Suivant</button>  
                       </div>
                     </React.Fragment>
                 );
@@ -193,7 +193,7 @@
                       <button className={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[4]} onClick={ () => this.setState({ currentMultiplier: 4})}>
                         x 4
                       </button>
-                      <button className={this.state.allIn === 1 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]} onClick={ () => this.setState({ allIn: 1})}>
+                      <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]} onClick={ () => this.setState({ currentMultiplier: 6})}>
                         All In
                       </button>  
                       </div>
@@ -215,7 +215,7 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.allIn === 1) {
+                             if (this.state.currentMultiplier === 6) {
                                this.state.gain = this.state.score
                                this.state.isUsed[6] = true
                              }
@@ -259,7 +259,7 @@
                       <button className={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[4]}>
                         x 4
                       </button>
-                      <button className={this.state.allIn === 1 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
+                      <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
                         All in
                       </button>
                       </div>  
@@ -279,7 +279,7 @@
                       </ul>  
                       <div className = "footer">
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
-                        <button id="validation" onClick={ () => this.setState({ step : 4, currentAnswer: 0, currentMultiplier: "", allIn : "" }) }>Next</button>  
+                        <button id="validation" onClick={ () => this.setState({ step : 4, currentAnswer: 0, currentMultiplier: ""}) }>Suivant</button>  
                       </div>
                     </React.Fragment>
                 );
@@ -292,7 +292,7 @@
                           <p>question 3</p>
                           <h2>Ceci est la 3e question</h2>                        
                         </div>
-                        <p className= "valeur">valeur : 100 𝟉</p>
+                        <p className= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div>
                       <div className="bonus">
                       <button className={this.state.currentMultiplier === 0 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[0]} onClick={ () => this.setState({ currentMultiplier: 0})}>
@@ -307,7 +307,7 @@
                       <button className={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[4]} onClick={ () => this.setState({ currentMultiplier: 4})}>
                         x 4
                       </button>
-                      <button className={this.state.allIn === 1 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]} onClick={ () => this.setState({ allIn: 1})}>
+                      <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]} onClick={ () => this.setState({ currentMultiplier: 6})}>
                         All In
                       </button>  
                       </div>
@@ -329,7 +329,7 @@
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
                         <button id="validation" onClick={ () => {
                              let score;
-                             if (this.state.allIn === 1) {
+                             if (this.state.currentMultiplier === 6) {
                                this.state.gain = this.state.score
                                this.state.isUsed[6] = true
                              }
@@ -358,7 +358,7 @@
                           <p>question 3</p>
                           <h2>Ceci est la 3e question</h2>                        
                         </div>
-                        <p className= "valeur">valeur : 100 𝟉</p>
+                        <p className= "valeur">valeur : {this.state.gain} 𝟉</p>
                       </div> 
                       <div className="bonus">
                       <button className={this.state.currentMultiplier === 0 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[0]}>
@@ -373,7 +373,7 @@
                       <button className={this.state.currentMultiplier === 4 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[4]}>
                         x 4
                       </button>
-                      <button className={this.state.allIn === 1 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
+                      <button className={this.state.currentMultiplier === 6 ? "multiplier clicked" : "multiplier"} disabled = {this.state.isUsed[6]}>
                         All in
                       </button>
                       </div>  
@@ -393,7 +393,7 @@
                       </ul>  
                       <div className = "footer">
                         <p id="cagnotte">cagnotte :{ this.state.score } 𝟉</p>
-                        <button id="validation" onClick={ () => this.setState({ step : 6, currentAnswer: 0, currentMultiplier: "", allIn: "" }) }>Next</button>  
+                        <button id="validation" onClick={ () => this.setState({ step : 6, currentAnswer: 0, currentMultiplier: "", allIn: "" }) }>Suivant</button>  
                       </div>
                     </React.Fragment>
                 );
