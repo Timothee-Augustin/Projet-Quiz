@@ -1,18 +1,18 @@
 const rulesButton = document.getElementById("rules");
-const answerButton = document.getElementsByClassName("answer");
+/**const answerButton = document.getElementsByClassName("answer");
 let answerChoice = null;
 let correctAnswer = 0;
 const validButton = document.getElementById("validation");
 const gain = document.getElementById("cagnotte");
 let playerGain = 0;
-let questionValue = 100;
+let questionValue = 100;*/
 
 rulesButton.addEventListener("click", function(){
     alert("- Vous commencez avec une cagnotte à 0 \n- En cas de bonne réponse, vous gagnez des wildCoins \n- Mais en cas de mauvaise réponse, vous perdez des wildCoins");
 });
 
 
-for (let i = 0; i < answerButton.length; i++){
+ /**for (let i = 0; i < answerButton.length; i++){
    
     answerButton[i].addEventListener("click", function(){
         answerButton[i].style.background = "lightblue";
