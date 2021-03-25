@@ -412,7 +412,7 @@
                   return (
                       <React.Fragment>
                         <div className = "scoreEnd"> {this.state.score >= 0 ? (<p>You earned {this.state.score} 𝟉<br />Hope you enjoyed the game !</p>) : (<p>You owe us {this.state.score} 𝟉<br />See you soon ... !</p>) }</div>
-                        <div class="imgEnd"> {this.state.score >= 0 ? <img src="https://s-i.huffpost.com/gen/5668976/images/n-MONEY-HAPPINESS-628x314.jpg" alt="meme"/> : <img src="https://collectifcinephile.files.wordpress.com/2018/01/flouz.jpg" alt="meme"/> }</div>
+                        <div className="imgEnd"> {this.state.score >= 0 ? <img src="https://s-i.huffpost.com/gen/5668976/images/n-MONEY-HAPPINESS-628x314.jpg" alt="meme"/> : <img src="https://collectifcinephile.files.wordpress.com/2018/01/flouz.jpg" alt="meme"/> }</div>
                         <button id = "rejouer" onClick={ () => this.setState({ step: 0, score: 0 }) }>
                               rejouer
                           </button>

@@ -482,6 +482,9 @@ ul {
     ul {
         margin-bottom: 50px;
     }
+    .imgEnd {
+       display: none;
+    }
 
 
     }
@@ -628,5 +631,8 @@ ul {
         ul {
             margin-bottom: 40px;
         }
+        .imgEnd {
+            display: none;
+         }
            
     }
