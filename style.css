@@ -74,7 +74,7 @@ strong {
     column-gap: 1rem;
     background : linear-gradient(to left,white,goldenrod);
     font-size : 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     
 }
 .content {
@@ -86,7 +86,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+        
 }
 
 ul {
@@ -98,10 +98,23 @@ ul {
     
     }
 
-li {
-    list-style: none;
+.multiplier {
+    border: 5px solid lightcoral;
+    border-radius: 10px;
+    width : 100px;
+    height: 40px;
+    font-size: 20px;
+    
     
 }
+.bonus {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 50px;
+    
+    
+}
+
 
 
 /* BUTTON REGLES */
@@ -445,7 +458,32 @@ li {
             font-size: 1.5em;
             margin-bottom: 30px;
         }
-        
+
+        .multiplier {
+            border: 3px solid lightcoral;
+            border-radius: 10px;
+            width : 70px;
+            height: 30px;
+            font-size: 15px;
+            
+            
+        }
+      .rules  {
+          margin-top: 30px;
+          margin-bottom: 30px;
+      }
+      .bonus {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .question{
+        margin-bottom: 30px;
+    }
+    ul {
+        margin-bottom: 50px;
+    }
+
+
     }
     @media screen and (max-width:320px) {
         h1 {
@@ -575,6 +613,20 @@ li {
             background-color:white;
             font-size: 1.5em;
             margin-bottom: 30px;
+        }
+        .rules {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .bonus {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .question{
+            margin-bottom: 25px;
+        }
+        ul {
+            margin-bottom: 40px;
         }
            
     }
