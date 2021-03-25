@@ -12,7 +12,7 @@ rulesButton.addEventListener("click", function(){
 });
 
 
-for (let i = 0; i < answerButton.length; i++){
+ /**for (let i = 0; i < answerButton.length; i++){
    
     answerButton[i].addEventListener("click", function(){
         answerButton[i].style.background = "lightblue";
