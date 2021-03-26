@@ -626,6 +626,9 @@ ul {
         .bonus {
             margin: 25px 0px;
         }
+        .bonus button{
+            width : 60px;
+        }
         .question{
             margin-bottom: 25px;
         }
